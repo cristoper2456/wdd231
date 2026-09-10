@@ -7,7 +7,7 @@
 
     header{
 
-        grid-template-columns: 24px uato;
+        grid-template-columns: 24px auto;
     }
 
     .hamburguer{
