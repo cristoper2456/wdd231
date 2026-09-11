@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>    <title>Document</title>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
 <body>
     <header>
@@ -36,6 +38,12 @@
         
         <section class="courses">
             <h2>Web Certificate Courses</h2>
+            <div class="filter-buttons">
+                <button id="all-btn">All</button>
+                <button id="wdd-btn">WDD</button>
+                <button id="cse-btn">CSE</button>
+            </div>
+            <div id="course-cards"></div>
         </section>
     </main>
     <footer>
@@ -45,6 +53,10 @@
             <a href="https://www.instagram.com/cri_gcf/" target="_blank"> <img src="images/instagram.svg" alt="instagram" width="16" height="16"></a>
             <a href="https://www.linkedin.com/in/cristopher-geovanni-castro-fern%C3%A1ndez-670391409/" target="_blank"> <img src="images/linkedin.svg" alt="Linked in" width="16" height="16"></a>
         </div>
+        <p> 
+             © Cristopher Castro | Santo Domingo, Dominican Republic | <span id="currentyear"></span>
+        </p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>
