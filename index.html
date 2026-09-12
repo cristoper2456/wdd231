@@ -3,49 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="">
+    <meta name="description" content="This is a page that will show my credits and classes that I have taken up until know.">
+    <meta name="author" content="Cristopher Castro">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>    <title>Document</title>
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/courses.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="images/logo2.svg" alt="site logo" width="1" height="1">
-        <span>Cristopher Castro</span>
+        <div class="brand">
+            <img src="images/logo2.svg" alt="site logo">
+            <span>Cristopher Castro</span>
+        </div>
+    
         <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
-            <nav id="nav-bar" class="navigation">
-             <ul>
-               <li class="current"><a href="#">Home</a></li>
-               <li><a href="#">Chamber</a></li>
-               <li><a href="#">Final</a></li>
-             </ul>
-           </nav>
+    
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Final</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
+    <div class="content-wrapper">
         <h1>Home</h1>
-        <section class="about">
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quo perspiciatis in doloribus aut exercitationem corrupti cupiditate voluptatem explicabo. Quo velit at ratione adipisci minima reprehenderit accusamus dicta aliquid possimus!</p>
-        </section>
-        
-        <section class="photo">
-            <h2>Student Photo</h2>
-            <img src="" alt="">
-        </section>
-        
-        <section class="courses">
-            <h2>Web Certificate Courses</h2>
-            <div class="filter-buttons">
-                <button id="all-btn">All</button>
-                <button id="wdd-btn">WDD</button>
-                <button id="cse-btn">CSE</button>
-            </div>
-            <div id="course-cards"></div>
-        </section>
-    </main>
+        <main>
+            <section class="card">
+                <h2>About Me</h2>
+                <p>My name is Cristopher Geovanni Castro Fernandez. I like to play basketball, study, go to church, read. I enjoy being with my family and reading the scriptures daily!</p>
+            </section>
+
+            <section class="card">
+                <h2>Student Photo</h2>
+                <img src="images/cris.jpeg" alt="">
+            </section>
+
+            <section class="card">
+                <h2>Web Certificate Courses</h2>
+                <div class="filter-buttons">
+                    <button id="all-btn">All</button>
+                    <button id="wdd-btn">WDD</button>
+                    <button id="cse-btn">CSE</button>
+                </div>
+                <div id="course-cards"></div>
+                <p id="total-credits"></p>
+            </section>
+        </main>
+    </div>
     <footer>
         <div class="social">
             <a href="https://www.facebook.com/cristopher.castro.446696?locale=es_LA" target="_blank"> <img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>

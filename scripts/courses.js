@@ -79,15 +79,17 @@ const courses = [
 ]
 
 const cardContainer = document.querySelector ('#course-cards');
+
 function displayCourses(courseList) {
     cardContainer.innerHTML = "";
 
     courseList.forEach((course) => {
         
         let statusClass = course.completed ? "completed" : "not-completed";
-        let cardHTML = `<div class="${statusClass}">${course.subject} ${course.number} <p>${course.title}</p> <p>${course.credits} </p></div>`;
-        cardContainer.innerHTML += cardHTML;
+        let cardHTML = `<div class="${statusClass}">${course.subject} ${course.number}</div>`;        cardContainer.innerHTML += cardHTML;
     });
+    let totalCredits = courseList.reduce((total, course) => total + course.credits, 0);
+    document.querySelector('#total-credits').innerHTML = `The total credits for course listed above is ${totalCredits}`;
 }
 
 
@@ -99,11 +101,11 @@ document.querySelector('#wdd-btn').addEventListener('click', () => {
 });
 
 document.querySelector('#cse-btn').addEventListener('click', () => {
-    let cseCourses = courses.filter(course => course.subject === 'cse');
+    let cseCourses = courses.filter(course => course.subject === 'CSE');
     displayCourses(cseCourses);
 });
 
 document.querySelector('#all-btn').addEventListener('click', () => {
-    let allCourses = courses.filter(course => course.subject === 'all');
-    displayCourses(allCourses);
+    displayCourses(courses);
 });
+
