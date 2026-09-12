@@ -6,20 +6,42 @@
         padding: 0 1rem;
     }
 
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: solid 1px #ddd;
+    }
+
+    .brand {
+        display: flex;  
+        align-items: center;
+        gap: 10px;
+    }
+
+    header img {
+        width: 35px;
+        height: auto;
+    }
+
     .hamburger {
         display: none;
     }
 
     .navigation {
         display: block;
-        border-bottom: solid 1px #eee;
+        width: auto;
+        margin-top: 0;
+        border-bottom: none;
     }
 
     .navigation ul {
         display: flex;
         list-style: none;
         padding: 0;
-        gap: 1rem;
+        margin: 0;
+        gap: 1.5rem;
     }
 
     .navigation a {
@@ -35,9 +57,14 @@
         align-items: start;
     }
 
-    main section.courses,
-    main section:nth-child(3) {
-        grid-column: 1 / -1 !important;
+    main h1 {
+        grid-column: 1 / -1;
+        margin: 1rem 0 0.5rem 0;
+    }
+
+    main section.card:nth-child(4),
+    main section.courses {
+        grid-column: 1 / -1;
         width: 100%;
     }
 
@@ -55,36 +82,4 @@
         padding: 0.6rem;
         margin: 0;
     }
-
-    .navigation {
-        display: block;
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .navigation ul {
-        display: flex;
-        gap: 20px;
-        padding: 0;
-        margin: 0;
-    }
-
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 0;
-        border-bottom: solid 1px #ddd;
-    }
-
-header img {
-    width: 35px;
-    height: auto;
-}
-
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 }
