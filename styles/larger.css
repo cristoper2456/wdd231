@@ -83,3 +83,9 @@
         margin: 0;
     }
 }
+
+.navigation li.current a {
+    background-color: rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    border-left: 4px solid #1044d4; /* Indicador visual en mobile y desktop */
+}
