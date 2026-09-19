@@ -1,0 +1,67 @@
+{
+    "members": [
+    {
+      "name": "Heladería Bon",
+      "address": "Av. Charles de Gaulle, Sabana Perdida, SDN",
+      "phone": "(809) 555-0101",
+      "website": "https://heladeriasbon.com",
+      "image": "bon.webp",
+      "membershipLevel": 3,
+      "description": "Artisanal ice cream and frozen desserts for the whole family."
+    },
+    {
+      "name": "Supermercados Olé",
+      "address": "Av. Hermanas Mirabal, Villa Mella, SDN",
+      "phone": "(809) 555-0102",
+      "website": "https://superole.com.do",
+      "image": "ole.webp",
+      "membershipLevel": 3,
+      "description": "Supermarket chain offering a wide variety of products at competitive prices."
+    },
+    {
+      "name": "Farmacia Carol",
+      "address": "Av. Charles de Gaulle #45, SDN",
+      "phone": "(809) 555-0103",
+      "website": "https://farmaciacarol.com",
+      "image": "carol.webp",
+      "membershipLevel": 2,
+      "description": "Pharmaceutical services, prescription medicines, and personal care products."
+    },
+    {
+      "name": "Ferretería El Cometa",
+      "address": "Av. Hermanas Mirabal km 10, Villa Mella, SDN",
+      "phone": "(809) 555-0104",
+      "website": "https://ferreteriaelcometa.com.do",
+      "image": "elcometa.webp",
+      "membershipLevel": 2,
+      "description": "Construction materials, hardware tools, and home improvement supplies."
+    },
+    {
+      "name": "Comedor y Repostería Doña María",
+      "address": "Buena Vista Primera, Calle Proyecto #12, SDN",
+      "phone": "(809) 555-0105",
+      "website": "https://donamariareposteria.com.do",
+      "image": "donamaria.webp",
+      "membershipLevel": 1,
+      "description": "Traditional Dominican home-style meals and freshly baked goods."
+    },
+    {
+      "name": "TechSol Dominican Republic",
+      "address": "Av. Jacobo Majluta, Res. Colinas del Arroyo, SDN",
+      "phone": "(809) 555-0106",
+      "website": "https://techsoldr.com.do",
+      "image": "techsol.webp",
+      "membershipLevel": 1,
+      "description": "IT solutions, technical support, and computer equipment maintenance."
+    },
+    {
+      "name": "Auto Repuestos Los Hermanos",
+      "address": "Av. Konrad Adenauer, Villa Mella, SDN",
+      "phone": "(809) 555-0107",
+      "website": "https://repuestosloshermanos.com.do",
+      "image": "loshermanos.webp",
+      "membershipLevel": 1,
+      "description": "Retail auto parts and accessories for various vehicle makes and models."
+    }       
+    ]
+}
