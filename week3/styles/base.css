@@ -1,0 +1,59 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 20px;
+  background-color: #ffffff;
+  color: #2c3e38;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.weather-card {
+  background-color: #f5eedb; 
+  border: 1px solid #777777; 
+  border-radius: 12px;       
+  padding: 25px 20px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.weather-card h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #2c3e38;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#weather-icon {
+  width: 70px;
+  height: 70px;
+}
+
+figcaption {
+  font-size: 1.1rem;
+  text-transform: capitalize; 
+  margin-top: 10px;
+  color: #333333;
+}
+
+.temperature {
+  font-size: 2.2rem;
+  margin: 10px 0 0 0;
+  color: #2c3e38;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
