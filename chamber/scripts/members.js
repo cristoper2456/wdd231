@@ -1,6 +1,13 @@
 const hamButton = document.querySelector('#ham-btn');
 const navBar = document.querySelector('#nav-bar');
-
+{
+  "name"; "Santo Domingo Tech",
+  "icon"; "images/member1.jpg",
+  "phone"; "809-555-0100",
+  "address"; "Av. Hermanas Mirabal #12",
+  "website"; "https://example.com",
+  "membershipLevel"; "Gold"
+}
 hamButton.addEventListener('click', () => {
     navBar.classList.toggle('show');
     hamButton.classList.toggle('show');

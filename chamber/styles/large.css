@@ -33,4 +33,22 @@
         max-width: 80px;
         height: 40px;
     }
+
+        main {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 1.5rem;                    
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    .hero {
+        grid-column: 1 / -1;
+    }
+
+    .spotlights {
+        grid-column: 1 / -1;
+    }
 }
+

@@ -167,3 +167,123 @@ footer {
     padding: 1.5rem;
     margin-top: 2rem;
 }
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.btn-cta {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #0056b3; 
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.spotlights-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.spotlight-card {
+    display: flex; 
+    align-items: center;
+    gap: 1.2rem;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.spotlight-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-card img {
+    width: 110px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.spotlight-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    text-align: left;
+}
+
+.spotlight-info h3 {
+    margin: 0 0 0.2rem 0;
+    font-size: 1.15rem;
+    color: #1a252c;
+}
+
+.spotlight-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #4a5568;
+}
+
+.spotlight-info .btn-link {
+    display: inline-block;
+    margin-top: 0.4rem;
+    color: #0056b3;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.spotlight-info .btn-link:hover {
+    text-decoration: underline;
+}
+
+.weather {
+    background-color: #f8f9fa;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.weather .current-weather {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.weather .forecast ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+    display: flex;
+    gap: 1.5rem;
+}
