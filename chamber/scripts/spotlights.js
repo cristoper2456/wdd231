@@ -13,7 +13,7 @@ async function getSpotlightMembers() {
             const qualifiedMembers = membersList.filter(member => 
                 member.membershipLevel === "Gold" || 
                 member.membershipLevel === "Silver" || 
-                member.membershipLevel === 3 || 
+                member.membershipLeve === 3 || 
                 member.membershipLevel === 2
             );
 
