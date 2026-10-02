@@ -6,9 +6,7 @@ const courses = [
         credits: 2,
         certificate: 'Web and Computer Programming',
         description: 'This course will introduce students to programming. It will introduce the building blocks of programming languages (variables, decisions, calculations, loops, array, and input/output) and use them to solve problems.',
-        technology: [
-            'Python'
-        ],
+        technology: ['Python'],
         completed: true
     },
     {
@@ -18,10 +16,7 @@ const courses = [
         credits: 2,
         certificate: 'Web and Computer Programming',
         description: 'This course introduces students to the World Wide Web and to careers in web site design and development. The course is hands on with students actually participating in simple web designs and programming. It is anticipated that students who complete this course will understand the fields of web design and development and will have a good idea if they want to pursue this degree as a major.',
-        technology: [
-            'HTML',
-            'CSS'
-        ],
+        technology: ['HTML', 'CSS'],
         completed: true
     },
     {
@@ -30,10 +25,8 @@ const courses = [
         title: 'Programming with Functions',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call , debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with functions to solve problems in many disciplines, including business, physical science, human performance, and humanities.',
-        technology: [
-            'Python'
-        ],
+        description: 'CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call , debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with programs to solve problems in many disciplines, including business, physical science, human performance, and humanities.',
+        technology: ['Python'],
         completed: true
     },
     {
@@ -43,9 +36,7 @@ const courses = [
         credits: 2,
         certificate: 'Web and Computer Programming',
         description: 'This course will introduce the notion of classes and objects. It will present encapsulation at a conceptual level. It will also work with inheritance and polymorphism.',
-        technology: [
-            'C#'
-        ],
+        technology: ['C#'],
         completed: true
     },
     {
@@ -55,11 +46,7 @@ const courses = [
         credits: 2,
         certificate: 'Web and Computer Programming',
         description: 'This course builds on prior experience in Web Fundamentals and programming. Students will learn to create dynamic websites that use JavaScript to respond to events, update content, and create responsive user experiences.',
-        technology: [
-            'HTML',
-            'CSS',
-            'JavaScript'
-        ],
+        technology: ['HTML', 'CSS', 'JavaScript'],
         completed: true
     },
     {
@@ -69,29 +56,58 @@ const courses = [
         credits: 2,
         certificate: 'Web and Computer Programming',
         description: 'This course builds on prior experience with Dynamic Web Fundamentals and programming. Students will focus on user experience, accessibility, compliance, performance optimization, and basic API usage.',
-        technology: [
-            'HTML',
-            'CSS',
-            'JavaScript'
-        ],
+        technology: ['HTML', 'CSS', 'JavaScript'],
         completed: false
     }
-]
+];
 
-const cardContainer = document.querySelector ('#course-cards');
+const cardContainer = document.querySelector('#course-cards');
+const courseDetails = document.querySelector('#course-details');
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector('#closeModal');
+    closeModal.addEventListener('click', () => {
+        courseDetails.close();
+    });
+}
+
+courseDetails.addEventListener('click', (event) => {
+    if (event.target === courseDetails) {
+        courseDetails.close();
+    }
+});
 
 function displayCourses(courseList) {
     cardContainer.innerHTML = "";
 
     courseList.forEach((course) => {
-        
+        let card = document.createElement('div');
         let statusClass = course.completed ? "completed" : "not-completed";
-        let cardHTML = `<div class="${statusClass}">${course.subject} ${course.number}</div>`;        cardContainer.innerHTML += cardHTML;
+        card.classList.add(statusClass);
+        card.textContent = `${course.subject} ${course.number}`;
+
+        card.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
+
+        cardContainer.appendChild(card);
     });
+
     let totalCredits = courseList.reduce((total, course) => total + course.credits, 0);
     document.querySelector('#total-credits').innerHTML = `The total credits for course listed above is ${totalCredits}`;
 }
-
 
 displayCourses(courses);
 
@@ -108,4 +124,3 @@ document.querySelector('#cse-btn').addEventListener('click', () => {
 document.querySelector('#all-btn').addEventListener('click', () => {
     displayCourses(courses);
 });
-

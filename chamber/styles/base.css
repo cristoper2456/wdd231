@@ -287,3 +287,28 @@ footer {
     display: flex;
     gap: 1.5rem;
 }
+
+/* Estilos para la ventana modal */
+dialog {
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Oscurecer el fondo cuando se abre el modal */
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Botón X de cierre */
+#closeModal {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    border: none;
+    background: transparent;
+    font-size: 1.2rem;
+    cursor: pointer;
+}

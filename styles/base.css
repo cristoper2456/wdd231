@@ -1,0 +1,263 @@
+/* ==========================================================================
+   1. RESET & ESTILOS GENERALES
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #333333;
+}
+
+.content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* ==========================================================================
+   2. HEADER & NAVEGACIÓN (Móvil Primero)
+   ========================================================================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366;
+    color: #ffffff;
+    padding: 0.75rem 1.25rem;
+    position: relative;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.brand img {
+    width: 45px;
+    height: auto;
+}
+
+.brand span {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+#nav-bar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #002244;
+    z-index: 10;
+}
+
+#nav-bar.show {
+    display: block;
+}
+
+#nav-bar ul {
+    list-style: none;
+}
+
+#nav-bar ul li a {
+    display: block;
+    padding: 0.8rem;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#nav-bar ul li.current a,
+#nav-bar ul li a:hover {
+    background-color: #0056b3;
+}
+
+/* ==========================================================================
+   3. SECCIONES Y SECCIÓN PRINCIPAL (MAIN)
+   ========================================================================== */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+h1 {
+    color: #003366;
+    margin-bottom: 0.5rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+    color: #003366;
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.25rem;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   4. CURSOS Y BOTONES DE FILTRO (RECUADROS)
+   ========================================================================== */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.filter-buttons button {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.95rem;
+    font-weight: bold;
+    border: 1px solid #003366;
+    background-color: #ffffff;
+    color: #003366;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filter-buttons button:hover,
+.filter-buttons button.active {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+
+#course-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 0.75rem;
+    margin: 1rem 0;
+}
+
+
+#course-cards div {
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: #212529;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+#course-cards div:hover {
+    transform: translateY(-2px);
+    background-color: #dee2e6;
+}
+
+
+#course-cards div.completed {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+#total-credits {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: #003366;
+}
+
+/* ==========================================================================
+   5. MODAL DIALOG (<dialog>)
+   ========================================================================== */
+dialog {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+dialog button#closeModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* ==========================================================================
+   6. FOOTER
+   ========================================================================== */
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.25rem;
+    margin-top: 2rem;
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+footer .social img {
+    filter: brightness(0) invert(1);
+}
+
+footer p {
+    font-size: 0.85rem;
+    margin: 0.25rem 0;
+}
