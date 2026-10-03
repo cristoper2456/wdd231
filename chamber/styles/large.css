@@ -34,10 +34,10 @@
         height: 40px;
     }
 
-        main {
+    main {
         display: grid;
-        grid-template-columns: 1fr 1fr; 
-        gap: 1.5rem;                    
+        grid-template-columns: 2fr 1fr; 
+        gap: 2rem;                    
         max-width: 1200px;
         margin: 0 auto;
         padding: 1rem;
@@ -50,5 +50,12 @@
     .spotlights {
         grid-column: 1 / -1;
     }
+
+    .membership-cards {
+        display: flex;
+        flex-direction: column; 
+        gap: 1.5rem;
+    }
 }
+
 
