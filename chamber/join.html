@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Cristopher Castro">
-    <meta name="description" content="Santo Domingo Norte Chamber of Commerce Directory Home Page">
+    <meta name="description" content="Santo Domingo Norte Chamber of Commerce Join Application Page">
     <title>WDD231 - Chamber Join Page</title>
     <link rel="icon" href="favicon.ico">
-    <meta property="og:title" content="WDD231 - Chamber Home Page | Cristopher Castro">
-    <meta property="og:description" content="Explore the official business directory of the Santo Domingo Norte Chamber of Commerce."> 
+    <meta property="og:title" content="WDD231 - Chamber Join Page | Cristopher Castro">
+    <meta property="og:description" content="Apply to join the official business directory of the Santo Domingo Norte Chamber of Commerce."> 
     <meta property="og:image" content="https://cristoper2456.github.io/wdd231/chamber/images/cris.jpeg"> 
-    <meta property="og:url" content="https://cristoper2456.github.io/wdd231/chamber/index.html">
-    
+    <meta property="og:url" content="https://cristoper2456.github.io/wdd231/chamber/join.html">   
+     
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css" media="(min-width: 640px)">
@@ -36,20 +36,19 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a  class="active" href="#">Join</a></li>
+                <li><a class="active" href="#">Join</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Feel free to join us!</h2>
- 
-         <form method="GET" action="thankyou.html" class="form">
+        <h1>Santo Domingo Norte Chamber - Job Application</h1>
+
+        <form method="GET" action="thankyou.html" class="form">
             <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
             <label>Last name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-            <label> Organizational title <input type="text" name="orgtitle" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"
-                title="Official title (minimum 7 characters using letters, spaces, or hyphens only)"></label>
-            <label>Email <input type="email" name="email" required placeholder="example@gmail.com"  title="Your Email" autocomplete="email"></label>
-            <label>Cell Phone <input type="tel" name="phone"  required autocomplete="tel" title="A Phone Number with dashes" placeholder="000-000-0000" ></label>
+            <label>Organizational title <input type="text" name="orgtitle" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" title="Official title (minimum 7 characters using letters, spaces, or hyphens only)"></label>
+            <label>Email <input type="email" name="email" required placeholder="example@gmail.com" title="Your Email" autocomplete="email"></label>
+            <label>Cell Phone <input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes" placeholder="000-000-0000"></label>
             <label>Business/Org Name <input type="text" name="business" required title="Your business' name" autocomplete="organization"></label>
             <label>NP Membership <input type="radio" name="membership" value="np" title="Your Membership Level"></label>
             <label>Bronze Membership <input type="radio" name="membership" value="bronze" title="Your Membership Level"></label>
@@ -84,7 +83,7 @@
                     <li>Community events</li>
                     <li>Basic directory listing</li>
                 </ul>
-                <button id="close-np"> Close</button>
+                <button id="close-np">Close</button>
             </dialog>
             <dialog id="modal-bronze">
                 <h2>Bronze Membership</h2>
