@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #003366;
+    --secondary-color: #0056b3;
+    --bg-light: #f8f9fa;
+    --text-color: #333333;
+    --white: #ffffff;
+    --heading-font: 'Roboto', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+section {
+    background-color: var(--white);
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+p, li {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+li strong {
+    color: var(--primary-color);
+}
+
+code {
+    background-color: var(--bg-light);
+    color: var(--secondary-color);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.wireframe-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+figure {
+    text-align: center;
+    background-color: var(--bg-light);
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    max-width: 900px;
+    margin: 2rem auto 0;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 8px;
+}
+
+footer p {
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+}
