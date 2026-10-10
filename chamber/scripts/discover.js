@@ -21,7 +21,7 @@ else {
     }
 }
 
-localStorage.setItem('lastVisit-ls', currentDay);
+localStorage.setItem('lastVisit-ls', currentDay)
 
 const cardsContainer = document.getElementById('cards-container');
 
