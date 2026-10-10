@@ -72,13 +72,20 @@
         grid-template-columns: repeat(2, 1fr);  
     }
 
-    .cards-grid img {
+    .cards-grid  img {
         transition: transform 0.3s ease, filter 0.3s ease;
     }
 
-    .cards-grid img:hover {
+    .cards-grid  img:hover {
         transform: scale(1.05);
         filter: brightness(1.05);
+    }
+    .cards-grid section img {
+        transition: transform 0.4s ease-in-out !important;
+    }
+
+    .cards-grid section img:hover {
+        transform: scale(1.06) !important;
     }
 }
 

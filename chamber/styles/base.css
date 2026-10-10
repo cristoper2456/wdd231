@@ -520,3 +520,6 @@ main h1 {
         "address"
         "description";
 }
+.cards-grid section {
+    overflow: hidden; /* Esto encierra la imagen para que el zoom luzca limpio */
+}
