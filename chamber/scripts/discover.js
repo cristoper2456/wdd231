@@ -59,3 +59,14 @@ places.forEach(place => {
     card.appendChild(btn);
     cardsContainer.appendChild(card);
 });
+
+// Control del menú hamburguesa
+const hamBtn = document.getElementById('ham-btn');
+const navBar = document.getElementById('nav-bar');
+
+if (hamBtn && navBar) {
+    hamBtn.addEventListener('click', () => {
+        navBar.classList.toggle('show');
+        hamBtn.classList.toggle('show');
+    });
+}
