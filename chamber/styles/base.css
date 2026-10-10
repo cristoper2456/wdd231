@@ -511,3 +511,17 @@ main h1 {
     height: 200px;
     object-fit: cover;
 }
+
+.card {
+    display: grid;
+    grid-template-areas: 
+        "photo"
+        "title"
+        "address"
+        "description";
+}
+
+.card img { grid-area: photo; }
+.card h3 { grid-area: title; }
+.card address { grid-area: address; }
+.card p { grid-area: description; }
