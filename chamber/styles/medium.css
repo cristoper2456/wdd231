@@ -2,4 +2,15 @@
     .cards-grid {
         grid-template-columns: repeat(2, 1fr); 
     }
+
+    @media (min-width: 640px) {
+        .card {
+            grid-template-areas: 
+                "title photo"
+                "address photo"
+                "description photo";
+            grid-template-columns: 1fr 120px;
+        }
+    }
+    .card button { grid-area: button; }
 }

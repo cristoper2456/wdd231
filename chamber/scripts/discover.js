@@ -25,31 +25,37 @@ localStorage.setItem('lastVisit-ls', currentDay);
 
 const cardsContainer = document.getElementById('cards-container');
 
-places.forEach (place => {
+places.forEach(place => {
     const card = document.createElement('section');
 
     const title = document.createElement('h2');
-    title.textContent = place.name
+    title.textContent = place.name;
+    card.appendChild(title);
 
-    card.appendChild(title)
-
-    const address = document.createElement('address')
-    address.textContent = place.address
-
+    const address = document.createElement('address');
+    address.textContent = place.address;
     card.appendChild(address);
 
     const img = document.createElement('img');
-    img.setAttribute ("src", place.photo)
-    img.setAttribute ('alt', place.name)
-
-    card.appendChild(img)
+    img.setAttribute("src", place.photo);
+    img.setAttribute('alt', place.name);
+    img.setAttribute('loading', 'lazy');
+    card.appendChild(img);
 
     const description = document.createElement('p');
-    description.textContent = place.description
+    description.textContent = place.description;
+    description.style.display = 'none'; 
+    card.appendChild(description);
 
-    card.appendChild(description)
+    const btn = document.createElement('button');
+    btn.textContent = "Learn More";
+    
+    btn.addEventListener('click', () => {
+        const isHidden = description.style.display === 'none';
+        description.style.display = isHidden ? 'block' : 'none';
+        btn.textContent = isHidden ? 'Show Less' : 'Learn More';
+    });
 
-
-    cardsContainer.appendChild
-    (card)
+    card.appendChild(btn);
+    cardsContainer.appendChild(card);
 });

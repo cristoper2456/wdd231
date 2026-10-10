@@ -520,8 +520,3 @@ main h1 {
         "address"
         "description";
 }
-
-.card img { grid-area: photo; }
-.card h3 { grid-area: title; }
-.card address { grid-area: address; }
-.card p { grid-area: description; }
