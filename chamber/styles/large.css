@@ -1,4 +1,4 @@
-@media (min-width: 640px) {
+@media (min-width: 1024px) {
     .hamburger {
         display: none;
     }
@@ -55,5 +55,20 @@
         display: flex;
         flex-direction: column; 
         gap: 1.5rem;
+    }
+    .cards-grid {
+    grid-template-columns: repeat(4, 2fr);  
+    }
+    .discover-main {
+        display: block;
+        grid-template-columns: 1fr 3fr; 
+        gap: 2rem;                        
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    .discover-main .cards-grid {
+        grid-template-columns: repeat(2, 1fr);  
     }
 }
