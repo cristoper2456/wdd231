@@ -60,7 +60,6 @@ places.forEach(place => {
     cardsContainer.appendChild(card);
 });
 
-// Control del menú hamburguesa
 const hamBtn = document.getElementById('ham-btn');
 const navBar = document.getElementById('nav-bar');
 
