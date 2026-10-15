@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "name": "Early Childhood Education",
+    "type": "grade",
+    "category": "basic",
+    "description": "Development of cognitive, social, emotional, and motor skills.",
+    "duration": "1 year",
+    "price": 3500,
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "name": "First Grade",
+    "type": "grade",
+    "category": "basic",
+    "description": "Introduction to reading, writing, mathematics, and basic science.",
+    "duration": "1 year",
+    "price": 4000,
+    "status": "active"
+  },
+  {
+    "id": 3,
+    "name": "Second Grade",
+    "type": "grade",
+    "category": "basic",
+    "description": "Development of literacy, numeracy, and critical thinking skills.",
+    "duration": "1 year",
+    "price": 4000,
+    "status": "active"
+  },
+  {
+    "id": 4,
+    "name": "Third Grade",
+    "type": "grade",
+    "category": "basic",
+    "description": "Strengthening reading comprehension and problem-solving abilities.",
+    "duration": "1 year",
+    "price": 4200,
+    "status": "active"
+  },
+  {
+    "id": 5,
+    "name": "Fourth Grade",
+    "type": "grade",
+    "category": "basic",
+    "description": "Further development of mathematics, language, and science skills.",
+    "duration": "1 year",
+    "price": 4200,
+    "status": "active"
+  },
+  {
+    "id": 6,
+    "name": "Fifth Grade",
+    "type": "grade",
+    "category": "basic",
+    "description": "Introduction to research, critical thinking, and independent learning.",
+    "duration": "1 year",
+    "price": 4500,
+    "status": "active"
+  },
+  {
+    "id": 7,
+    "name": "Sixth Grade",
+    "type": "grade",
+    "category": "basic",
+    "description": "Preparation for secondary education.",
+    "duration": "1 year",
+    "price": 4500,
+    "status": "active"
+  },
+  {
+    "id": 8,
+    "name": "First Year of Secondary School",
+    "type": "grade",
+    "category": "basic",
+    "description": "General education in mathematics, science, languages, and technology.",
+    "duration": "1 year",
+    "price": 5000,
+    "status": "active"
+  },
+  {
+    "id": 9,
+    "name": "Second Year of Secondary School",
+    "type": "grade",
+    "category": "basic",
+    "description": "Development of academic knowledge and practical skills.",
+    "duration": "1 year",
+    "price": 5000,
+    "status": "active"
+  },
+  {
+    "id": 10,
+    "name": "Third Year of Secondary School",
+    "type": "grade",
+    "category": "basic",
+    "description": "Preparation for advanced studies and technical education.",
+    "duration": "1 year",
+    "price": 5200,
+    "status": "active"
+  },
+  {
+    "id": 11,
+    "name": "Computer Science Technician",
+    "type": "technical_program",
+    "category": "technical",
+    "description": "Training in computer systems, software, hardware, and troubleshooting.",
+    "duration": "2 years",
+    "price": 12000,
+    "status": "active"
+  },
+  {
+    "id": 12,
+    "name": "Software Development Technician",
+    "type": "technical_program",
+    "category": "technical",
+    "description": "Training in programming, software development, databases, and application design.",
+    "duration": "2 years",
+    "price": 15000,
+    "status": "active"
+  },
+  {
+    "id": 13,
+    "name": "Computer Network Technician",
+    "type": "technical_program",
+    "category": "technical",
+    "description": "Installation, configuration, and maintenance of computer networks.",
+    "duration": "18 months",
+    "price": 13000,
+    "status": "active"
+  },
+  {
+    "id": 14,
+    "name": "Graphic Design Technician",
+    "type": "technical_program",
+    "category": "technical",
+    "description": "Training in digital illustration, visual communication, branding, and graphic design.",
+    "duration": "18 months",
+    "price": 11000,
+    "status": "active"
+  },
+  {
+    "id": 15,
+    "name": "Accounting Technician",
+    "type": "technical_program",
+    "category": "technical",
+    "description": "Training in bookkeeping, financial records, accounting principles, and office procedures.",
+    "duration": "2 years",
+    "price": 12500,
+    "status": "active"
+  },
+  {
+    "id": 16,
+    "name": "Digital Marketing Technician",
+    "type": "technical_program",
+    "category": "technical",
+    "description": "Training in social media marketing, online advertising, content creation, and analytics.",
+    "duration": "1 year",
+    "price": 10000,
+    "status": "active"
+  },
+  {
+    "id": 17,
+    "name": "Basic English",
+    "type": "course",
+    "category": "basic",
+    "description": "Introduction to English vocabulary, grammar, reading, and conversation.",
+    "duration": "3 months",
+    "price": 3000,
+    "status": "active"
+  },
+  {
+    "id": 18,
+    "name": "Advanced English",
+    "type": "course",
+    "category": "technical",
+    "description": "Advanced grammar, fluent communication, listening comprehension, and writing.",
+    "duration": "6 months",
+    "price": 6000,
+    "status": "active"
+  },
+  {
+    "id": 19,
+    "name": "Basic Computer Skills",
+    "type": "course",
+    "category": "basic",
+    "description": "Computer fundamentals, file management, internet use, and digital literacy.",
+    "duration": "2 months",
+    "price": 2500,
+    "status": "active"
+  },
+  {
+    "id": 20,
+    "name": "Programming Fundamentals",
+    "type": "course",
+    "category": "technical",
+    "description": "Introduction to programming logic, variables, conditions, and loops.",
+    "duration": "3 months",
+    "price": 4500,
+    "status": "under development"
+  },
+  {
+    "id": 21,
+    "name": "Office Applications",
+    "type": "course",
+    "category": "basic",
+    "description": "Practical training in word processing, spreadsheets, and presentations.",
+    "duration": "2 months",
+    "price": 3000,
+    "status": "active"
+  },
+  {
+    "id": 22,
+    "name": "Painting Workshop",
+    "type": "workshop",
+    "category": "basic",
+    "description": "Introduction to painting techniques, color theory, and artistic expression.",
+    "duration": "4 weeks",
+    "price": 1800,
+    "status": "active"
+  },
+  {
+    "id": 23,
+    "name": "Robotics Workshop",
+    "type": "workshop",
+    "category": "technical",
+    "description": "Hands-on activities involving robotics, basic electronics, and problem-solving.",
+    "duration": "6 weeks",
+    "price": 3500,
+    "status": "Development"
+  },
+  {
+    "id": 24,
+    "name": "Public Speaking Workshop",
+    "type": "workshop",
+    "category": "basic",
+    "description": "Development of communication, presentation, and public speaking skills.",
+    "duration": "4 weeks",
+    "price": 2000,
+    "status": "active"
+  },
+  {
+    "id": 25,
+    "name": "Creative Writing Workshop",
+    "type": "workshop",
+    "category": "basic",
+    "description": "Practice in storytelling, creative writing, and written communication.",
+    "duration": "4 weeks",
+    "price": 1600,
+    "status": "active"
+  },
+  {
+    "id": 26,
+    "name": "Financial Literacy Workshop",
+    "type": "workshop",
+    "category": "basic",
+    "description": "Introduction to budgeting, saving, responsible spending, and financial planning.",
+    "duration": "3 weeks",
+    "price": 1800,
+    "status": "active"
+  }
+]

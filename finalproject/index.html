@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 | Final Project | Pepito's School</title>
+    <meta name="description" content="This is the final project for WDD231. It is a website for Pepito's School, a fictional school that offers courses for all ages, including children, teens, and adults.">
+    <meta name="author" content="Cristopher Castro">
+
+    <meta property="og:title" content="Pepito's School">
+    <meta property="og:description" content="Better education for Children, Teens and Adults.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <script src="scripts/final.js" type="module" defer></script>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Pepito's School</h1>
+        <button id="menu-btn" aria-label="Open Menu">☰</button>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="thankyou.html">Thank You</a></li>
+            </ul>
+        </nav>
+    </header>
+<main id="main-index">
+        <section class="hero">
+            <h2>Welcome to Pepito's School</h2>
+            <p>Providing a comprehensive, high-quality education for Children, Teens, and Adults. Empowering the next generation with knowledge and technical skills.</p>
+            <a href="programs.html" class="submit-btn" style="text-decoration: none; display: inline-block; margin-top: 1rem;">Explore Our Programs</a>
+        </section>
+
+        <section class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+            <div class="info-card">
+                <h3>📚 Variety of Programs</h3>
+                <p>From basic primary grades to technical and specialized computer science certifications.</p>
+            </div>
+            <div class="info-card">
+                <h3>💡 Practical Learning</h3>
+                <p>Hands-on experience designed to prepare students for real-world academic and professional challenges.</p>
+            </div>
+            <div class="info-card">
+                <h3>🤝 Community & Support</h3>
+                <p>A welcoming environment focused on continuous growth, personal values, and academic excellence.</p>
+            </div>
+        </section>
+
+        <main>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <button id="open-modal" class="submit-btn">Important Announcement</button>
+        </div>
+
+        <dialog id="info-modal" class="modal-dialog">
+            <h3>Welcome to Pepito's School!</h3>
+            <p>We are currently accepting new enrollments for the upcoming academic period. Don't miss out on our specialized technical programs!</p>
+            <button id="close-modal" class="submit-btn">Close</button>
+        </dialog>
+    </main>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Pepito's School | Cristopher Castro</p>
+        <p id="lastModified"></p>
+        <p>https://youtu.be/5cGvFRc7WP8</p>
+    </footer>
+</body>
+</html>

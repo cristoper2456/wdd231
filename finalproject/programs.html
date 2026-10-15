@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 | Final Project | Pepito's School</title>
+    <meta name="description" content="This is the final project for WDD231. It is a website for Pepito's School, a fictional school that offers courses for all ages, including children, teens, and adults.">
+    <meta name="author" content="Cristopher Castro">
+
+    <meta property="og:title" content="Pepito's School">
+    <meta property="og:description" content="Better education for Children, Teens and Adults.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <script src="scripts/final.js" type="module" defer></script>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Pepito's School</h1>
+        <button id="menu-btn" aria-label="Open Menu">☰</button>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="thankyou.html">Thank You</a></li>
+            </ul>
+        </nav>
+    </header>
+    </header>
+
+    <main id="main-index">
+        <section>
+            <h2>Check Our Academic Programs & Courses</h2>
+            <p>Explore our wide variety of courses for all levels.</p>
+
+            <div class="filter-buttons">
+                <button id="all" class="filter-btn active">All Courses</button>
+                <button id="basic" class="filter-btn">Basic Courses</button>
+                <button id="technical" class="filter-btn">Technical Courses</button>
+            </div>
+
+            <div id="courses-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Pepito's School | Cristopher Castro</p>
+        <p id="lastModified"></p>
+        <p>https://youtu.be/5cGvFRc7WP8</p>
+    </footer>
+</body>
+</html>
