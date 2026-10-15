@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+    main {
+        padding: 3rem;
+    }
+
+    .hero h2 {
+        font-size: 2.8rem;
+    }
+
+    .admissions-container {
+        grid-template-columns: 1fr 1.2fr;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #courses-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .filter-buttons {
+        justify-content: flex-start;
+    }
+}
